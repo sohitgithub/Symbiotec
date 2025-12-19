@@ -73,6 +73,11 @@
   border-radius: 40px;
   cursor: pointer;
   transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-btn a{
+    text-decoration: none;
 }
 
 .hero-btn:hover {
