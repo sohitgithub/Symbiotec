@@ -1,0 +1,83 @@
+/* MAIN WRAPPER */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000; /* fallback */
+}
+
+/* OGL CANVAS */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  background: radial-gradient(
+    circle at 20% 40%,
+    rgba(120, 180, 255, 0.60) 0%,      /* soft sky blue */
+    rgba(90, 150, 240, 0.50) 30%,      /* deeper blue */
+    rgba(50, 110, 220, 0.40) 55%,      /* mid blue */
+    rgba(20, 60, 150, 0.55) 75%,       /* darker blue */
+    rgba(10, 30, 80, 0.85) 100%        /* deep navy */
+  );
+
+  mix-blend-mode: screen;
+}
+
+
+/* TEXT CENTERED */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* HERO TITLE */
+.hero-title {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  font-size: 20px;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.hero-btn {
+  padding: 12px 34px;
+  font-size: 18px;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: scale(1.05);
+}
+
+
